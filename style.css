@@ -2,26 +2,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  
 }
 
-
+/* :root{
+  --BigFont:
+} */
 
 header {
   height: 10vh;
   display: flex;
-  border: 2px solid black;  
+  border: 2px solid black;
   justify-content: center;
   align-items: center;
- 
 }
 .main {
   display: flex;
   height: 90vh;
   width: 90vw;
   margin: 20px auto;
-  
-  justify-content: space-around; 
+
+  justify-content: space-around;
   align-items: center;
 }
 .main div {
@@ -41,26 +42,33 @@ p {
   height: 80vh;
   margin: 5vh;
 }
-.details,
-.lang {
+.details
+{
   border: 2px solid black;
-  height: 35vh;
+  height: 85vh;
   width: 80vw;
   border-radius: 10px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+
+  margin-top: 20px;
+
+ 
 }
 
-.lang {
-  margin-top: 20px;
-  justify-content: space-around;
+label{
+  
+  width: 9rem;
+  display: inline-block;
 }
 
 select {
   padding: 5px;
   border: 2px solid black;
+  width:15rem;
 }
 button {
   padding: 5px;
@@ -72,4 +80,43 @@ button {
 a {
   text-decoration: none;
   color: black;
+}
+
+.detail-data{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+.detail-data div{
+  display: flex;
+  align-items: center;
+}
+
+.fir{
+  justify-content: flex-start;
+ 
+}
+input[type='text']{
+padding: 5px;
+width:15rem;
+border: 2px solid black;
+}
+
+.redio{
+  display: flex;
+}
+
+input[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  padding: 5px;
+  width: 15rem;
+  border: 2px solid black;
+}
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
 }
